@@ -41,12 +41,17 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 .control-header{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 25%;
+    padding-top: 120px;
     padding-bottom: 5%;
 }
 .control_header-background{
@@ -162,9 +167,12 @@
 .list{
     position: absolute;
     background-color: var(--mautrang);
-    border-radius: 28px;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
     width: 100%;
-    top: 97%;
+    top: 693px;
+    padding-top: 50px;
+
 }
 .list_bar{
     position: absolute;
@@ -175,15 +183,18 @@
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
     background-color: var(--mauxamtrong);
-    top: 3%;
+    top: 2%;
     right: 50%;
     transform: translateX(50%);
     z-index: 2;
 }
 .list_items{
-    margin-top: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 94vh;
+    overflow-y:auto ;
 }
 .list_item{
     display: flex;
@@ -201,7 +212,7 @@
     width: 65px;
 }
 .list_item-img{
-    background-image: url(./acset/object_music/1.jpg);
+   
     padding-top: 100%;
     background-size: cover;
     background-repeat: no-repeat;
