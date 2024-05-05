@@ -1,4 +1,10 @@
+const backgroundImg = document.querySelector('.background-img')
+const nameSong = document.querySelector('.control_container-name')
+const audio = document.getElementById('myAudio')
+
 const app = {
+    currenIndex: 0,
+    isPlaying: false,
     song:[
         {
             namesong: 'Fall back',
@@ -83,18 +89,72 @@ const app = {
         })
         document.querySelector('.list_items').innerHTML = html.join('')
     },
+
     handleEvent:function(){
         const img = document.querySelector('.control_header-background');
+        const padding = document.querySelector('.control-header')
         const imgwidth = img.offsetWidth
+        const initialPadding = 120
+        //thu nhỏ ảnh và làm mờ khi cuộn
         document.onscroll = function(){
             const croll =scrollY;               
             const newwidth = (imgwidth - croll) 
             img.style.width = newwidth > 0 ? newwidth + 'px' : 0
+            img.style.opacity =  newwidth / imgwidth
+            padding.style.paddingTop = newwidth > initialPadding ? (initialPadding) + 'px' : (newwidth > 0 ? newwidth + 'px' : '0');
+            console.log(newwidth);
+        }
+        const this_ = this
+        const playbutton = document.querySelector('.play_js')
+        const pausebutton = document.querySelector('.paust_js')
+        // const active_audio = document.querySelector('.active_audio')
+
+        // nut play và láue nhạc
+        playbutton.addEventListener('click', toggleAudio);
+        pausebutton.addEventListener('click', toggleAudio);
+         function toggleAudio() {
+            removeActive()
+            if (this_.isPlaying) {
+                audio.pause(); // Tạm dừng nhạc nếu đang phát
+                
+            } else {
+                audio.play(); // Chơi nhạc nếu đang tạm dừng
+                
+            }
+            const active_audio = document.querySelector('.active_audio')
+
+            console.log(active_audio);
+        }
+        audio.onplay = function(){
+            playbutton.classList.remove('active_audio')
+            pausebutton.classList.add('active_audio')
+            this_.isPlaying = true
+        }
+        audio.onpause = function(){
+            pausebutton.classList.remove('active_audio')
+            playbutton.classList.add('active_audio')
+            this_.isPlaying = false
+        }
+        console.log(this_.isPlaying);
+        function removeActive(){
+            document.querySelector('.active_audio').classList.remove('active_audio')
+
         }
     },
+    loandIndex0:function(){
+        const array0 = this.song[0]
+        backgroundImg.style.backgroundImage = "url('" + array0.lickimg + "')";
+        nameSong.textContent = array0.namesong
+        audio.scr = array0.linkmusic
+    },
     start:function(){
+        // reander list song
         this.render()
+        // tính năng thu phóng hình
         this.handleEvent()
+        // chạy index0 cho hình audio và tên nhạc
+        this.loandIndex0()
+
     }
 }
 app.start()
