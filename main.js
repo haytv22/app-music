@@ -91,6 +91,8 @@ const app = {
     },
 
     handleEvent:function(){
+        
+
         const img = document.querySelector('.control_header-background');
         const padding = document.querySelector('.control-header')
         const imgwidth = img.offsetWidth
@@ -103,7 +105,6 @@ const app = {
             img.style.opacity =  newwidth / imgwidth
             padding.style.paddingTop = newwidth > initialPadding ? (initialPadding) + 'px' : (newwidth > 0 ? newwidth + 'px' : '0');
         }
-
         const this_ = this
         const playbutton = document.querySelector('.play_js')
         const pausebutton = document.querySelector('.paust_js')
@@ -121,16 +122,19 @@ const app = {
             }
 
         }
+        // nhạc khi đang chạy sẽ
         audio.onplay = function(){
             playbutton.classList.remove('active_audio')
             pausebutton.classList.add('active_audio')
             this_.isPlaying = true
         }
+        //nhạc khi dừng sẽ
         audio.onpause = function(){
             pausebutton.classList.remove('active_audio')
             playbutton.classList.add('active_audio')
             this_.isPlaying = false
         }
+        // xóa active cho nút play,pause
         function removeActive(){
             document.querySelector('.active_audio').classList.remove('active_audio')
         }
@@ -147,7 +151,6 @@ const app = {
             const currentTimeString = formatTime(currentTime);
             const durationString = formatTime(duration);
             const progress = (currentTime / duration) * 100
-           
 
             timeline.style.width = progress + '%'
             timeduration.textContent = durationString
@@ -160,13 +163,54 @@ const app = {
             return minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0');
           }
 
-
+          
 
         // tua nhạc
-          const progress = document.querySelector('.container-progress')
-          progress.addEventListener('click',function(event){
-            console.log(event);
-          })
+        const progress = document.querySelector('.container-progress')
+          function play(newcurrentTime) {
+            audio.currentTime = newcurrentTime;
+            audio.play();
+        }
+        // nhấn vào progress để tua nhạc
+        progress.addEventListener('click', function(event) {
+            const img = document.querySelector('.control-header')
+            const widthprogress = progress.offsetWidth;
+            const clienx = event.clientX;
+            const widthimg = img.offsetWidth;
+            const widthtimelint1 = (widthimg - widthprogress) / 2;
+        
+            const x = ((clienx - widthtimelint1) / widthprogress) * 100;
+            const duration = audio.duration;
+            const newcurrentTime = (x / 100) * duration;
+    
+            play(newcurrentTime);
+        });
+
+        
+        // chỉnh âm lượng
+        audio.volume = 0.45454545
+        const volumebar = document.querySelector('.volume_bar')
+        volumebar.addEventListener('click',function(event){
+            const img = document.querySelector('.control-header')
+            const control_volume = document.querySelector('.control_container-volume').offsetWidth
+            const imgwidth = img.offsetWidth
+            const volumeWidth = volumebar.offsetWidth
+            const control_Excess = imgwidth - control_volume
+            const volume_Excess = control_volume - volumeWidth
+            const all_Excess = (control_Excess + volume_Excess) /2
+            const x = ((event.clientX) + 6 ) - all_Excess
+            const newvolume = x / volumeWidth 
+            audio.volume = newvolume
+            const Xpercent = newvolume * 100 + '%'
+            volume_bar_updata(Xpercent)
+            console.log(newvolume);
+            console.log(Xpercent);
+       })
+       function volume_bar_updata(Xpercent) {
+            const volume = document.querySelector('.volume_bar-2')
+            volume.style.width = Xpercent
+       }
+
 
     },
     loandIndex0:function(){

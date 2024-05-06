@@ -113,6 +113,7 @@
     border-bottom-right-radius:10px;
     background-color: var(--mautrang);
     top: 0;
+    transition: all 0.2s ease-in-out;
 }
 .progress-tiems{
     display: flex;
@@ -135,8 +136,8 @@
     display: flex;
     gap: 30px;
 }
-.control_container-button i{
-    transition: all 0.4s ease-in-out;
+.container_i{
+    transition: all 0.2s ease-in-out;
 }
 .control_container-button i:nth-child(4){
     width: 26.41px;
@@ -183,6 +184,7 @@
     border-bottom-right-radius:10px;
     background-color: var(--mautrang);
     top: 0;
+    transition: all 0.2s ease-in-out;
 }
 .list{
     position: absolute;
