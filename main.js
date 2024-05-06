@@ -102,14 +102,12 @@ const app = {
             img.style.width = newwidth > 0 ? newwidth + 'px' : 0
             img.style.opacity =  newwidth / imgwidth
             padding.style.paddingTop = newwidth > initialPadding ? (initialPadding) + 'px' : (newwidth > 0 ? newwidth + 'px' : '0');
-            console.log(newwidth);
         }
+
         const this_ = this
         const playbutton = document.querySelector('.play_js')
         const pausebutton = document.querySelector('.paust_js')
-        // const active_audio = document.querySelector('.active_audio')
-
-        // nut play và láue nhạc
+        // nut play và pause nhạc
         playbutton.addEventListener('click', toggleAudio);
         pausebutton.addEventListener('click', toggleAudio);
          function toggleAudio() {
@@ -121,9 +119,7 @@ const app = {
                 audio.play(); // Chơi nhạc nếu đang tạm dừng
                 
             }
-            const active_audio = document.querySelector('.active_audio')
 
-            console.log(active_audio);
         }
         audio.onplay = function(){
             playbutton.classList.remove('active_audio')
@@ -135,11 +131,43 @@ const app = {
             playbutton.classList.add('active_audio')
             this_.isPlaying = false
         }
-        console.log(this_.isPlaying);
         function removeActive(){
             document.querySelector('.active_audio').classList.remove('active_audio')
-
         }
+
+
+       
+        const timeline = document.querySelector('.Progress_2')
+        const timeduration = document.querySelector('.duration')
+        const timecurecurrent = document.querySelector('.curecurrent')
+        // thời lượng bài hát thanh timeline
+        audio.ontimeupdate = function(){
+            const currentTime = audio.currentTime;
+            const duration = audio.duration;
+            const currentTimeString = formatTime(currentTime);
+            const durationString = formatTime(duration);
+            const progress = (currentTime / duration) * 100
+           
+
+            timeline.style.width = progress + '%'
+            timeduration.textContent = durationString
+            timecurecurrent.textContent = currentTimeString
+        }
+        //chuyển giây thành phút
+        function formatTime(time) {
+            var minutes = Math.floor(time / 60);
+            var seconds = Math.floor(time % 60);
+            return minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0');
+          }
+
+
+
+        // tua nhạc
+          const progress = document.querySelector('.container-progress')
+          progress.addEventListener('click',function(event){
+            console.log(event);
+          })
+
     },
     loandIndex0:function(){
         const array0 = this.song[0]

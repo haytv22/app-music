@@ -106,7 +106,6 @@
 }
 .Progress_2{
     position: absolute;
-    width: 45%;
     height: 10px;
     border-top-left-radius:10px;
     border-bottom-left-radius: 10px;
@@ -131,6 +130,10 @@
     font-size: 2.2rem;
     color: var(--mautrang);
     
+}
+.button_container{
+    display: flex;
+    gap: 30px;
 }
 .control_container-button i{
     transition: all 0.4s ease-in-out;
