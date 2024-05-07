@@ -40,8 +40,7 @@
 
 .control{
     background: linear-gradient(45deg, #FF99FF, #9999FF, #23a6d5, #23d5ab);
-	/* background-size: 400% 400%; */
-	animation: gradient 10s ease infinite;
+	animation: gradient 18s ease infinite;
 	height: auto;
     display: flex;
     flex-direction: column;

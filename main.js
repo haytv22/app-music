@@ -135,6 +135,14 @@ const app = {
             backgroundcolor:'linear-gradient(45deg, rgb(108 104 33), rgb(0 0 0), rgb(19 21 17), rgb(216 4 5))',
             backgroundsize:'400% 400%'
         },
+        {
+            namesong: 'PHẢI CHĂNG EM ĐÃ YÊU',
+            singer: 'Văn vui vẻ',
+            linkmusic: './acset/object_music/y2meta.com - PHẢI CHĂNG EM ĐÃ YÊU - JUKY SAN ft. REDT _ OFFICIAL MUSIC VIDEO (128 kbps).mp3',
+            lickimg: './acset/object_music/17.jpg',
+            backgroundcolor:'linear-gradient(45deg, rgb(240 202 195), rgb(157 17 177), rgb(247 174 212), rgb(249 255 255))',
+            backgroundsize:'400% 400%'
+        },
     ],
     
     render:function () {
