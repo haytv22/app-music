@@ -222,31 +222,40 @@ const app = {
        let number = 0
        next.addEventListener('click',function(){next_song()})
        const next_song = function(){
-        if (number >= ( this_.song.length)-1) {
-         number = 0
-        }else {
-         number = number + 1
+        number = (number + 1) % this_.song.length; 
+            const array = this_.song[number]
+            backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
+            nameSong.textContent = array.namesong
+            audio.src = array.linkmusic 
+            audio.play()
+            acitve_list(number)
+            console.log(number);
         }
-        const array = this_.song[number]
-        backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
-         nameSong.textContent = array.namesong
-         audio.src = array.linkmusic 
-         audio.play()
-    }
        //chuyển bài BACK
        const back = document.querySelector('.back_song')
        back.addEventListener('click',function(){
-           number = number - 1
-           if (number < 0){
-            number = 9
-           }else {
-           }
+        number = (number - 1 + this_.song.length) % this_.song.length;
            const array = this_.song[number]
            backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
             nameSong.textContent = array.namesong
             audio.src = array.linkmusic 
             audio.play()
+            acitve_list(number)
        })
+
+
+
+       //acive list song 
+       const list_item = document.querySelector(`.list_item:nth-child(1)`)
+       list_item.classList.add('active_list')
+       function acitve_list(number) {
+           const numbers = number + 1
+            console.log(numbers);
+            const list_item = document.querySelector(`.list_item:nth-child(${numbers})`)
+            const acitve_listed = document.querySelector(`.list_item.active_list`)
+            acitve_listed.classList.remove('active_list')
+            list_item.classList.add('active_list')
+       }
 
     },
     loandIndex0:function(){

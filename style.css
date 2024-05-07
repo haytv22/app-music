@@ -82,6 +82,7 @@
     align-items: center;
 }
 .control_container-name{
+    font-size: 1.7rem;
     font-weight: 700;
     color: var(--mautrang);
 }
