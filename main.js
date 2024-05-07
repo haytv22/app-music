@@ -91,8 +91,6 @@ const app = {
     },
 
     handleEvent:function(){
-        
-
         const img = document.querySelector('.control_header-background');
         const padding = document.querySelector('.control-header')
         const imgwidth = img.offsetWidth
@@ -155,6 +153,13 @@ const app = {
             timeline.style.width = progress + '%'
             timeduration.textContent = durationString
             timecurecurrent.textContent = currentTimeString
+
+             // Kiểm tra hoàn thành âm thanh hiệu quả
+            if (Math.floor(currentTime) === Math.floor(duration)) {
+                next_song();
+            } 
+            
+
         }
         //chuyển giây thành phút
         function formatTime(time) {
@@ -184,6 +189,7 @@ const app = {
             const newcurrentTime = (x / 100) * duration;
     
             play(newcurrentTime);
+
         });
 
         
@@ -203,8 +209,6 @@ const app = {
             audio.volume = newvolume
             const Xpercent = newvolume * 100 + '%'
             volume_bar_updata(Xpercent)
-            console.log(newvolume);
-            console.log(Xpercent);
        })
        function volume_bar_updata(Xpercent) {
             const volume = document.querySelector('.volume_bar-2')
@@ -212,12 +216,44 @@ const app = {
        }
 
 
+      
+       //chuyển bài NEXT
+       const next = document.querySelector('.next_song')
+       let number = 0
+       next.addEventListener('click',function(){next_song()})
+       const next_song = function(){
+        if (number >= ( this_.song.length)-1) {
+         number = 0
+        }else {
+         number = number + 1
+        }
+        const array = this_.song[number]
+        backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
+         nameSong.textContent = array.namesong
+         audio.src = array.linkmusic 
+         audio.play()
+    }
+       //chuyển bài BACK
+       const back = document.querySelector('.back_song')
+       back.addEventListener('click',function(){
+           number = number - 1
+           if (number < 0){
+            number = 9
+           }else {
+           }
+           const array = this_.song[number]
+           backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
+            nameSong.textContent = array.namesong
+            audio.src = array.linkmusic 
+            audio.play()
+       })
+
     },
     loandIndex0:function(){
         const array0 = this.song[0]
         backgroundImg.style.backgroundImage = "url('" + array0.lickimg + "')";
         nameSong.textContent = array0.namesong
-        audio.scr = array0.linkmusic
+        audio.src  = array0.linkmusic
     },
     start:function(){
         // reander list song
