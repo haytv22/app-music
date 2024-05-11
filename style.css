@@ -1,10 +1,16 @@
+@font-face {
+    font-family: SanFranciscoProItalic;
+    src: url('acset/San Francisco Pro/San Francisco Pro/OTF/SFCompactDisplay-Heavy.otf') format('truetype'); /* Đường dẫn tới font */
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family:'SanFranciscoProItalic',sans-serif;
     font-weight: 100;
     font-style: normal;
 }
+
+
 :root{
     --mautrang:#fffdfe;
     --mauxamtrong:#8c8b91;
@@ -45,7 +51,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -81,6 +86,10 @@
     align-items: center;
 }
 .control_container-name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 1.7rem;
     font-weight: 700;
     color: var(--mautrang);
@@ -120,6 +129,8 @@
     justify-content: space-between;
 }
 .Progress-time{
+    font-size: 0.8rem;
+    opacity: 0.6;
     font-weight: 400;
     color: var(--mautrang);
 }
@@ -145,8 +156,8 @@
 .play_js,.paust_js{
     display: none;
 }
-.control_container-button i:hover{
-    opacity: 0.4;
+.control_container-button i:focus{
+    scale: 0.9;
 }
 .control_container-volume{
     width: 100%;
