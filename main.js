@@ -24,7 +24,7 @@ const app = {
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'SỐNG CHO HẾT ĐỜI THANH XUÂN',
+            namesong: 'Sống cho hết đời thanh xuân',
             singer: 'Văn vui vẻ',
             linkmusic: './acset/object_music/y2meta.com - SỐNG CHO HẾT ĐỜI THANH XUÂN _ MUSIC VIDEO _ Dick x Xám x Tuyết (320 kbps).mp3',
             lickimg: './acset/object_music/3.jpg',

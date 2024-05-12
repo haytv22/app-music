@@ -1,6 +1,6 @@
 @font-face {
     font-family: SanFranciscoProItalic;
-    src: url('acset/San Francisco Pro/San Francisco Pro/OTF/SFCompactDisplay-Heavy.otf') format('truetype'); /* Đường dẫn tới font */
+    src: url('acset/San Francisco Pro/San Francisco Pro/OTF/SFCompactDisplay-Medium.otf') format('truetype'); /* Đường dẫn tới font */
 }
 *{
     margin: 0;
@@ -36,7 +36,9 @@
     background-color:#8c8b91c7;
     color: var(--mautrang);
 }
-
+.active_i{
+    color:black !important;
+}
 
 
 .music_app{
@@ -136,7 +138,7 @@
 }
 .control_container-button{
     display: flex;
-    width: 90%;
+    width: 75%;
     justify-content: space-between;
     margin: 40px 0 50px 0;
     font-size: 2.2rem;
@@ -144,11 +146,13 @@
     
 }
 .button_container{
-    display: flex;
-    gap: 30px;
+    transform: translateY(6%);
 }
 .container_i{
-    transition: all 0.2s ease-in-out;
+    font-size: 3rem;
+}
+.container_i i{
+    height:45px;
 }
 .control_container-button i:nth-child(4){
     width: 26.41px;
@@ -220,6 +224,22 @@
     right: 50%;
     transform: translateX(50%);
     z-index: 2;
+}
+.list_next{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+.list_next-playing{
+    font-weight: 700
+}
+.list_next-i i{
+    margin-left: 16px;
+    color: #8c8b91c7;
 }
 .list_items{
     display: flex;
