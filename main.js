@@ -233,7 +233,11 @@ const app = {
 
              // Kiểm tra hoàn thành âm thanh hiệu quả
             if (Math.floor(currentTime) === Math.floor(duration)) {
-                next_song();
+                if (R) {
+                repeat_song()  
+                }else{
+                    next_song()
+                }
             } 
             
 
@@ -362,25 +366,38 @@ const app = {
     });
        
 
-       
+    //repeat song
+    const repeat_song = function(){
+        number = number
+        const array = this_.song[number]
+        backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
+        backgroundcolor.style.background = array.backgroundcolor;
+        backgroundcolor.style.backgroundSize = array.backgroundsize;
+        nameSong.textContent = array.namesong
+        audio.src = array.linkmusic 
+        audio.play()
+        acitve_list(number)
+    }
+
+
     //acitve icon shuffle and repeat
-    let S = true
-    let R = true
+    let S = false
+    let R = false
     const active_icon = function(){
         if (S) {
-            this.classList.add('active_i')
+            this.classList.remove('active_i')
             S = false
         }else{
-            this.classList.remove('active_i')
+            this.classList.add('active_i')
             S = true
         }
     } 
     const active_icon_2 = function(){
         if (R) {
-            this.classList.add('active_i')
+            this.classList.remove('active_i')
             R = false
         }else{
-            this.classList.remove('active_i')
+            this.classList.add('active_i')
             R = true
         }
     } 
@@ -388,6 +405,10 @@ const app = {
     const repeat = document.querySelector('.fa-solid.fa-repeat ')
     shuffle.addEventListener('click',active_icon)
     repeat.addEventListener('click',active_icon_2)
+
+
+
+    
 
     },
     loandIndex0:function(){
