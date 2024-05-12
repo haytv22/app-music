@@ -339,30 +339,56 @@ const app = {
 
 
 
-       // Chọn bài hát từ danh sách
-const list_item = document.querySelectorAll('.list_item');
+        // Chọn bài hát từ danh sách
+    const list_item = document.querySelectorAll('.list_item');
 
-list_item.forEach(function(item, index) {
-    item.addEventListener('click', function() {
-        number = index; // Cập nhật biến number theo chỉ mục (index)
-        const namesong = this.querySelector('.namesong-name').textContent;
-        const array = this_.song.find(song => song.namesong === namesong);
-        backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
-        backgroundcolor.style.background = array.backgroundcolor;
-        backgroundcolor.style.backgroundSize = array.backgroundsize;
-        nameSong.textContent = array.namesong;
-        audio.src = array.linkmusic; 
-        audio.play();
-        acitve_list(number);
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    list_item.forEach(function(item, index) {
+        item.addEventListener('click', function() {
+            number = index; // Cập nhật biến number theo chỉ mục (index)
+            const namesong = this.querySelector('.namesong-name').textContent;
+            const array = this_.song.find(song => song.namesong === namesong);
+            backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
+            backgroundcolor.style.background = array.backgroundcolor;
+            backgroundcolor.style.backgroundSize = array.backgroundsize;
+            nameSong.textContent = array.namesong;
+            audio.src = array.linkmusic; 
+            audio.play();
+            acitve_list(number);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     });
-});
        
 
        
+    //acitve icon shuffle and repeat
+    let S = true
+    let R = true
+    const active_icon = function(){
+        if (S) {
+            this.classList.add('active_i')
+            S = false
+        }else{
+            this.classList.remove('active_i')
+            S = true
+        }
+    } 
+    const active_icon_2 = function(){
+        if (R) {
+            this.classList.add('active_i')
+            R = false
+        }else{
+            this.classList.remove('active_i')
+            R = true
+        }
+    } 
+    const shuffle = document.querySelector('.fa-solid.fa-shuffle ')
+    const repeat = document.querySelector('.fa-solid.fa-repeat ')
+    shuffle.addEventListener('click',active_icon)
+    repeat.addEventListener('click',active_icon_2)
+
     },
     loandIndex0:function(){
         const array0 = this.song[0]
@@ -375,7 +401,7 @@ list_item.forEach(function(item, index) {
     start:function(){
         // reander list song
         this.render()
-        // tính năng thu phóng hình
+        // tính năng 
         this.handleEvent()
         // chạy index0 cho hình audio và tên nhạc
         this.loandIndex0()
