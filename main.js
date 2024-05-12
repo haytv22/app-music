@@ -88,7 +88,7 @@ const app = {
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'SỐNG CHO HẾT ĐỜI THANH XUÂN 2',
+            namesong: 'Sống cho hết đời thanh xuân 2',
             singer: 'Văn vui vẻ',
             linkmusic: './acset/object_music/y2meta.com - SỐNG CHO HẾT ĐỜI THANH XUÂN 2 - BCTM x TNS  ( Official Music Video ) (320 kbps).mp3',
             lickimg: './acset/object_music/11.jpg',
@@ -299,7 +299,7 @@ const app = {
        let number = 0
        next.addEventListener('click',function(){next_song()})
        const next_song = function(){
-        number = (number + 1) % this_.song.length; 
+           number = (number + 1) % this_.song.length; 
             const array = this_.song[number]
             backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
             backgroundcolor.style.background = array.backgroundcolor;
@@ -308,7 +308,6 @@ const app = {
             audio.src = array.linkmusic 
             audio.play()
             acitve_list(number)
-            console.log(number);
         }
        //chuyển bài BACK
        const back = document.querySelector('.back_song')
@@ -327,18 +326,40 @@ const app = {
 
 
        //acive list song 
-       const list_item = document.querySelector(`.list_item:nth-child(1)`)
-       list_item.classList.add('active_list')
+       const list_item_1 = document.querySelector(`.list_item:nth-child(1)`)
+       list_item_1.classList.add('active_list')
        function acitve_list(number) {
            const numbers = number + 1
-            console.log(numbers);
             const list_item = document.querySelector(`.list_item:nth-child(${numbers})`)
             const acitve_listed = document.querySelector(`.list_item.active_list`)
             acitve_listed.classList.remove('active_list')
             list_item.classList.add('active_list')
        }
 
-       
+
+
+
+       // Chọn bài hát từ danh sách
+const list_item = document.querySelectorAll('.list_item');
+
+list_item.forEach(function(item, index) {
+    item.addEventListener('click', function() {
+        number = index; // Cập nhật biến number theo chỉ mục (index)
+        const namesong = this.querySelector('.namesong-name').textContent;
+        const array = this_.song.find(song => song.namesong === namesong);
+        backgroundImg.style.backgroundImage = "url('" + array.lickimg + "')";
+        backgroundcolor.style.background = array.backgroundcolor;
+        backgroundcolor.style.backgroundSize = array.backgroundsize;
+        nameSong.textContent = array.namesong;
+        audio.src = array.linkmusic; 
+        audio.play();
+        acitve_list(number);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
        
 
        

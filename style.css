@@ -149,11 +149,10 @@
     transform: translateY(6%);
 }
 .container_i{
+    height: 50px;
     font-size: 3rem;
 }
-.container_i i{
-    height:45px;
-}
+
 .control_container-button i:nth-child(4){
     width: 26.41px;
 }
