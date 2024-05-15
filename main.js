@@ -40,109 +40,70 @@ const app = {
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Trời ơi con chưa muốn chết',
+            namesong: 'Lullaby',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Đen - Trời ơi con chưa muốn chết (Prod. by Tantu Beats) (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - Lullaby (128 kbps).mp3',
             lickimg: './acset/object_music/5.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(217 217 217), rgb(14 14 14), rgb(218 218 218), rgb(150 150 150))',
+            backgroundcolor:'linear-gradient(45deg, rgb(212 227 232), rgb(189 202 210), rgb(55 74 66), rgb(41 36 30))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Lộn Xộn ll',
+            namesong: 'Khi chiều tàn',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Đen - Lộn Xộn ll (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - Khi chiều tàn về bên ô cửa sổ - FiGDee (Voice Nguyễn Đình Toàn) (128 kbps).mp3',
             lickimg: './acset/object_music/6.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(50 55 48), rgb(21 24 31), rgb(58 65 79), rgb(88 69 76))',
+            backgroundcolor:'linear-gradient(45deg, rgb(9 85 159), rgb(143 123 152), rgb(36 72 162), rgb(236 126 71))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Trời hôm nay nhiều mây cực!',
+            namesong: 'Ngẫu Hứng 3',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Trời hôm nay nhiều mây cực! (320 kbps).mp3',
-            lickimg: './acset/object_music/7.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(138 137 186), rgb(145 138 190), rgb(92 128 181), rgb(138 132 178))',
+            linkmusic: './acset/object_music/y2meta.com - Jay Chou - Ngẫu Hứng 3 Nốt Nhạc ( bản Full ) - 周杰伦三音即兴 (128 kbps).mp3',
+            lickimg: './acset/object_music/7.png',
+            backgroundcolor:'linear-gradient(45deg, rgb(213 203 192), rgb(68 85 45), rgb(91 111 34), rgb(171 160 154))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: '_Youngz_',
+            namesong: 'Dung bam vao nghe',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Wxrdie - _Youngz_ ft. Tommy Tèo [Prod. by wokeupat4am] (320 kbps).mp3',
-            lickimg: './acset/object_music/8.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(46 62 9), rgb(45 152 40), rgb(118 74 103), rgb(137 11 180))',
+            linkmusic: './acset/object_music/y2meta.com - Dung bam vao nghe (128 kbps).mp3',
+            lickimg: 'acset/object_music/8.png',
+            backgroundcolor:'linear-gradient(45deg, rgb(173 168 158), rgb(54 46 36), rgb(144 128 113), rgb(206 196 194))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: ' _KARMA_',
+            namesong: 'skyblue',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - willistic - _KARMA_ ft. Tommy Tèo _ OFFICIAL AUDIO (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - G Sounds & BrosZZ - skyblue (128 kbps).mp3',
             lickimg: './acset/object_music/9.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(182 184 183), rgb(54 70 83), rgb(133 142 147)',
+            backgroundcolor:'linear-gradient(45deg, rgb(80 79 50), rgb(121 146 174), rgb(106 172 206), rgb(109 174 208))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Rolling',
+            namesong: 'I Need a Girl',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Richie D. ICY & AXTROBOY - Rolling (Official Music Video) (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - I Need a Girl (128 kbps).mp3',
             lickimg: './acset/object_music/10.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(14 15 11), rgb(63 69 45), rgb(11 10 12), rgb(75 103 112))',
+            backgroundcolor:'linear-gradient(45deg, rgb(43 55 64), rgb(39 61 66), rgb(48 109 137), rgb(117 123 147))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Sống cho hết đời thanh xuân 2',
+            namesong: 'Bae,Kajima',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - SỐNG CHO HẾT ĐỜI THANH XUÂN 2 - BCTM x TNS  ( Official Music Video ) (320 kbps).mp3',
-            lickimg: './acset/object_music/11.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(255 253 225), rgb(180 189 126), rgb(150 161 107), rgb(255 254 223))',
+            linkmusic: './acset/object_music/y2meta.com - Bae, Kajima. (128 kbps).mp3',
+            lickimg: 'acset/object_music/11.png',
+            backgroundcolor:'linear-gradient(45deg, rgb(48 115 181), rgb(56 124 191), rgb(52 111 171), rgb(65 127 188))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'ghệ iu dấu của em ơi',
+            namesong: 'Hy Vọng',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - tlinh - ghệ iu dấu của em ơi (feat. 2pillz, wokeup) _ OFFICIAL MUSIC VIDEO (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - Hustlang Robber - Hy Vọng (Official Lyric Video) (128 kbps).mp3',
             lickimg: './acset/object_music/12.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(146 81 67), rgb(246 82 174), rgb(137 37 68), rgb(231 203 187))',
+            backgroundcolor:'linear-gradient(45deg, rgb(22 20 18), rgb(54 51 31), rgb(12 10 7), rgb(64 56 31))',
             backgroundsize:'400% 400%'
         },
-        {
-            namesong: 'nếu lúc đó',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - tlinh - nếu lúc đó (ft. 2pillz) _ OFFICIAL MUSIC VIDEO (320 kbps).mp3',
-            lickimg: './acset/object_music/13.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(142 92 175), rgb(11 19 22), rgb(179 38 95), rgb(0 1 5))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'TẠI VÌ SAO',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - RPT MCK - TẠI VÌ SAO _ Official Music Video (320 kbps).mp3',
-            lickimg: './acset/object_music/14.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(254 254 254), rgb(5 5 5), rgb(199 11 6), rgb(155 155 155))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'Waiting For You',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - MONO - Waiting For You (Album 22 - Track No.10) (320 kbps).mp3',
-            lickimg: './acset/object_music/15.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(27 46 42), rgb(218 74 51), rgb(209 69 58), rgb(27 32 28))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'Có khóc cũng thế thôi',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Hào _ Có khóc cũng thế thôi (Official Visualizer) (320 kbps).mp3',
-            lickimg: './acset/object_music/16.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(108 104 33), rgb(0 0 0), rgb(19 21 17), rgb(216 4 5))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'PHẢI CHĂNG EM ĐÃ YÊU',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - PHẢI CHĂNG EM ĐÃ YÊU - JUKY SAN ft. REDT _ OFFICIAL MUSIC VIDEO (128 kbps).mp3',
-            lickimg: './acset/object_music/17.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(240 202 195), rgb(157 17 177), rgb(247 174 212), rgb(249 255 255))',
-            backgroundsize:'400% 400%'
-        },
+        
     ],
     
     render:function () {
@@ -423,107 +384,67 @@ const app = {
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Trời ơi con chưa muốn chết',
+            namesong: 'Lullaby',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Đen - Trời ơi con chưa muốn chết (Prod. by Tantu Beats) (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - Lullaby (128 kbps).mp3',
             lickimg: './acset/object_music/5.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(217 217 217), rgb(14 14 14), rgb(218 218 218), rgb(150 150 150))',
+            backgroundcolor:'linear-gradient(45deg, rgb(212 227 232), rgb(189 202 210), rgb(55 74 66), rgb(41 36 30))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Lộn Xộn ll',
+            namesong: 'Khi chiều tàn',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Đen - Lộn Xộn ll (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - Khi chiều tàn về bên ô cửa sổ - FiGDee (Voice Nguyễn Đình Toàn) (128 kbps).mp3',
             lickimg: './acset/object_music/6.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(50 55 48), rgb(21 24 31), rgb(58 65 79), rgb(88 69 76))',
+            backgroundcolor:'linear-gradient(45deg, rgb(9 85 159), rgb(143 123 152), rgb(36 72 162), rgb(236 126 71))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Trời hôm nay nhiều mây cực!',
+            namesong: 'Ngẫu Hứng 3',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Trời hôm nay nhiều mây cực! (320 kbps).mp3',
-            lickimg: './acset/object_music/7.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(138 137 186), rgb(145 138 190), rgb(92 128 181), rgb(138 132 178))',
+            linkmusic: './acset/object_music/y2meta.com - Jay Chou - Ngẫu Hứng 3 Nốt Nhạc ( bản Full ) - 周杰伦三音即兴 (128 kbps).mp3',
+            lickimg: './acset/object_music/7.png',
+            backgroundcolor:'linear-gradient(45deg, rgb(213 203 192), rgb(68 85 45), rgb(91 111 34), rgb(171 160 154))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: '_Youngz_',
+            namesong: 'Dung bam vao nghe',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Wxrdie - _Youngz_ ft. Tommy Tèo [Prod. by wokeupat4am] (320 kbps).mp3',
-            lickimg: './acset/object_music/8.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(46 62 9), rgb(45 152 40), rgb(118 74 103), rgb(137 11 180))',
+            linkmusic: './acset/object_music/y2meta.com - Dung bam vao nghe (128 kbps).mp3',
+            lickimg: 'acset/object_music/8.png',
+            backgroundcolor:'linear-gradient(45deg, rgb(173 168 158), rgb(54 46 36), rgb(144 128 113), rgb(206 196 194))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: ' _KARMA_',
+            namesong: 'skyblue',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - willistic - _KARMA_ ft. Tommy Tèo _ OFFICIAL AUDIO (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - G Sounds & BrosZZ - skyblue (128 kbps).mp3',
             lickimg: './acset/object_music/9.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(182 184 183), rgb(54 70 83), rgb(133 142 147)',
+            backgroundcolor:'linear-gradient(45deg, rgb(80 79 50), rgb(121 146 174), rgb(106 172 206), rgb(109 174 208))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Rolling',
+            namesong: 'I Need a Girl',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Richie D. ICY & AXTROBOY - Rolling (Official Music Video) (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - I Need a Girl (128 kbps).mp3',
             lickimg: './acset/object_music/10.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(14 15 11), rgb(63 69 45), rgb(11 10 12), rgb(75 103 112))',
+            backgroundcolor:'linear-gradient(45deg, rgb(43 55 64), rgb(39 61 66), rgb(48 109 137), rgb(117 123 147))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'Sống cho hết đời thanh xuân 2',
+            namesong: 'Bae,Kajima',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - SỐNG CHO HẾT ĐỜI THANH XUÂN 2 - BCTM x TNS  ( Official Music Video ) (320 kbps).mp3',
-            lickimg: './acset/object_music/11.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(255 253 225), rgb(180 189 126), rgb(150 161 107), rgb(255 254 223))',
+            linkmusic: './acset/object_music/y2meta.com - Bae, Kajima. (128 kbps).mp3',
+            lickimg: 'acset/object_music/11.png',
+            backgroundcolor:'linear-gradient(45deg, rgb(48 115 181), rgb(56 124 191), rgb(52 111 171), rgb(65 127 188))',
             backgroundsize:'400% 400%'
         },
         {
-            namesong: 'ghệ iu dấu của em ơi',
+            namesong: 'Hy Vọng',
             singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - tlinh - ghệ iu dấu của em ơi (feat. 2pillz, wokeup) _ OFFICIAL MUSIC VIDEO (320 kbps).mp3',
+            linkmusic: './acset/object_music/y2meta.com - Hustlang Robber - Hy Vọng (Official Lyric Video) (128 kbps).mp3',
             lickimg: './acset/object_music/12.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(146 81 67), rgb(246 82 174), rgb(137 37 68), rgb(231 203 187))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'nếu lúc đó',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - tlinh - nếu lúc đó (ft. 2pillz) _ OFFICIAL MUSIC VIDEO (320 kbps).mp3',
-            lickimg: './acset/object_music/13.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(142 92 175), rgb(11 19 22), rgb(179 38 95), rgb(0 1 5))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'TẠI VÌ SAO',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - RPT MCK - TẠI VÌ SAO _ Official Music Video (320 kbps).mp3',
-            lickimg: './acset/object_music/14.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(254 254 254), rgb(5 5 5), rgb(199 11 6), rgb(155 155 155))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'Waiting For You',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - MONO - Waiting For You (Album 22 - Track No.10) (320 kbps).mp3',
-            lickimg: './acset/object_music/15.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(27 46 42), rgb(218 74 51), rgb(209 69 58), rgb(27 32 28))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'Có khóc cũng thế thôi',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - Hào _ Có khóc cũng thế thôi (Official Visualizer) (320 kbps).mp3',
-            lickimg: './acset/object_music/16.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(108 104 33), rgb(0 0 0), rgb(19 21 17), rgb(216 4 5))',
-            backgroundsize:'400% 400%'
-        },
-        {
-            namesong: 'PHẢI CHĂNG EM ĐÃ YÊU',
-            singer: 'Văn vui vẻ',
-            linkmusic: './acset/object_music/y2meta.com - PHẢI CHĂNG EM ĐÃ YÊU - JUKY SAN ft. REDT _ OFFICIAL MUSIC VIDEO (128 kbps).mp3',
-            lickimg: './acset/object_music/17.jpg',
-            backgroundcolor:'linear-gradient(45deg, rgb(240 202 195), rgb(157 17 177), rgb(247 174 212), rgb(249 255 255))',
+            backgroundcolor:'linear-gradient(45deg, rgb(22 20 18), rgb(54 51 31), rgb(12 10 7), rgb(64 56 31))',
             backgroundsize:'400% 400%'
         },];
     let playedSongs = [];
